@@ -1,0 +1,169 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+.wrapper {
+  backdrop-filter: blur(5px);
+  background: rgba(49, 49, 49, 0.66);
+
+  .container {
+    * {
+      text-align: center;
+    }
+
+    .row {
+      padding-bottom: 30px;
+
+      .header {
+        .section-title {
+          font-family: "Bebas Neue", sans-serif;
+          text-transform: uppercase;
+          color: #dfefff;
+          font-size: 45px !important;
+          font-weight: 700;
+          margin: 0 0 0 0;
+          margin-bottom: 15px;
+          padding-top: 30px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .element-member {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin-top: 30px;
+        overflow: hidden;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+
+        .single-team-box {
+          overflow: hidden;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+
+          .team-image {
+            position: relative;
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: auto;
+              -webkit-transition: 0.5s;
+              transition: 0.5s;
+            }
+
+            .team-social-icon {
+              position: absolute;
+              z-index: 5;
+              top: 50%;
+              width: 100%;
+              text-align: center;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              transform: translateY(-50%);
+
+              a {
+                margin: 4px;
+                display: inline-block;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                -o-transform: scale(0);
+                transform: scale(0);
+                -webkit-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+                will-change: transform;
+
+                i {
+                  color: #5e87eb;
+                  font-size: 20px;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  border-radius: 5px;
+                  background-color: #ffffff;
+                  -webkit-transition: all 0.3s;
+                  -o-transition: all 0.3s;
+                  transition: all 0.3s;
+                }
+
+                i:hover {
+                  color: #ffffff;
+                  background-color: #5e87eb;
+                }
+              }
+            }
+          }
+
+          .team-info {
+            padding: 20px 15px 20px;
+            text-align: center;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            font-family: "Yanone Kaffeesatz", sans-serif;
+
+            h3 {
+              color: #dfefff;
+              font-size: 20px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+
+            span {
+              color: #a6befb;
+              font-size: 16px;
+              font-weight: 500;
+              display: block;
+            }
+          }
+
+          .team-image::before {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            background-color: #5e87eb;
+            background-image: linear-gradient(
+              -135deg,
+              #611bdd 0%,
+              #5e87eb 100%
+            );
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+          }
+        }
+
+        .single-team-box:hover .team-image::before {
+          opacity: 0.8;
+          visibility: visible;
+        }
+
+        .single-team-box:hover .team-image img {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+
+        .single-team-box:hover .team-social-icon a {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

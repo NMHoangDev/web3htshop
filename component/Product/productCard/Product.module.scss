@@ -1,0 +1,164 @@
+.wrapper {
+  width: 300px;
+  height: 460px;
+
+  margin: 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 680px;
+}
+.product-img {
+  width: 280px;
+  height: 30%;
+  // background-image: url("../../../../../../server/data/imageDoGo/imageBanGhe/bo\ ban\ ghe\ hong\ de\ hương\ đá.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+  position: relative;
+  img {
+    width: 280px;
+    height: 100%;
+  }
+  .overlay {
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 202, 202, 0.2);
+    animation: fade-in 0.5s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    button {
+      font-size: 20px;
+      color: #242424;
+      // opacity: 0.8;
+      border: solid 1px #c1c0c0;
+      background-color: transparent;
+      margin: 8px;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    button:hover {
+      background-color: #7a7a7a;
+      color: #e4e4e4;
+    }
+  }
+}
+.product-name {
+  text-align: center;
+  font-size: 26px;
+
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 240px;
+  text-align: center;
+  height: 10%;
+  // height: 80px;
+}
+.product-desc {
+  text-align: center;
+  font-size: 14px;
+  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+  width: 220px;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  height: 40px;
+  // margin-top: 10px;
+}
+.product-price {
+  text-align: center;
+  font-size: 14px;
+  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+  width: 220px;
+  text-align: center;
+  // opacity: 0.7;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  // margin-top: 10px;
+}
+
+// CSS FOR BUTTON VIEW
+.view-product {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.view-product:hover,
+.view-product:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.view-product:hover {
+  transform: translateY(-1px);
+}
+
+.view-product:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+.type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+  padding: 6px;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}

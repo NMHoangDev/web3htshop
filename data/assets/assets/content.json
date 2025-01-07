@@ -1,0 +1,173 @@
+[
+   {
+      "name": "Đèn mây tre đan trang trí bàn",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/denmaytreban.png",
+      "desc": "Sản phẩm được thiết kế tỉ mỉ tạo độ ấm vừa phải cho đèn",
+      "price": 140000,
+      "material": "Mây tre",
+      "quantity": 20,
+      "type": "Đèn"
+   },
+   {
+      "name": "Đèn thả mây tre đan",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/denmaytretha.png",
+      "desc": "Sự kết hợp tinh tế giữa nghệ thuật thủ công truyền thống và thiết kế hiện đại, mang đến không gian ấm cúng và độc đáo cho ngôi nhà của bạn.",
+      "price": 475000,
+      "material": "Mây tre",
+      "quantity": 20,
+      "type": "Đèn"
+   },
+   {
+      "name": "Khay Trà Mây Tre Đan Hình Tròn Hoa Văn Đẹp Bắt Mắt",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/khaymaytretron.jpg",
+      "desc": "Với hoa văn đẹp mắt, sản phẩm này kết hợp giữa nghệ thuật thủ công truyền thống và tính thẩm mỹ, tạo điểm nhấn tinh tế cho không gian trà đạo của bạn.",
+      "price": 45000,
+      "material": "Mây tre",
+      "quantity": 20,
+      "type": "Khay"
+   },
+   {
+      "name": "Chiếu cói Nga Sơn",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/chieucoi.jpg",
+      "desc": "Sản phẩm thủ công tinh xảo từ cói tự nhiên, mang lại cảm giác mát mẻ và thoải mái, hoàn hảo cho không gian sống truyền thống và hiện đại.",
+      "price": 100000,
+      "material": "Cói",
+      "quantity": 20,
+      "type": "Chiếu"
+   },
+   {
+      "name": "Combo 3 khay cói hình chữ nhật",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/khaycoihcn.jpg",
+      "desc": "Bộ khay đa năng làm từ cói tự nhiên, thiết kế đẹp mắt và bền chắc, lý tưởng cho việc trang trí và sử dụng hàng ngày trong gia đình.",
+      "price": 100000,
+      "material": "Cói",
+      "quantity": 20,
+      "type": "Khay"
+   },
+   {
+      "name": "Giỏ cói xách đi biển",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/tuixachmaytre.webp",
+      "desc": "Với thiết kế thời trang và chất liệu cói tự nhiên, giỏ xách đi biển không chỉ bền đẹp mà còn mang lại phong cách mộc mạc, hoàn hảo cho những chuyến đi biển và dạo chơi.",
+      "price": 240000,
+      "material": "Cói",
+      "quantity": 20,
+      "type": "Giỏ"
+   },
+   {
+      "name": "Áo dài xứ Huế",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/aodaixuhue.jpg",
+      "desc": "Tà áo dài truyền thống với thiết kế tinh tế và chất liệu mềm mại, mang đậm nét duyên dáng và thanh lịch của văn hóa Huế, hoàn hảo cho các dịp đặc biệt.",
+      "price": 250000,
+      "material": "Lụa",
+      "quantity": 20,
+      "type": "Y Phục"
+   },
+   {
+      "name": "Áo nhật bình",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/aonhatbinh.jpg",
+      "desc": "Họa tiết tinh xảo, thêu tay 100%, chất liệu quý phái, tôn vinh vẻ đẹp truyền thống và sự sang trọng của trang phục Việt.",
+      "price": 1500000,
+      "material": "Lụa",
+      "quantity": 20,
+      "type": "Y Phục"
+   },
+   {
+      "name": "Lọ Hoa Gốm Bát Tràng",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/lohoa.jpg",
+      "desc": "Sản phẩm gốm truyền thống với đường nét tinh tế, chất liệu tự nhiên và họa tiết truyền thống, tạo điểm nhấn độc đáo và sang trọng cho không gian sống của bạn.",
+      "price": 385000,
+      "material": "Gốm",
+      "quantity": 20,
+      "type": "Lọ"
+   },
+   {
+      "name": "Bộ ấm trà tử sa Bát Tràng Âu Lạc",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/amtratusa.jpg",
+      "desc": "Kết hợp giữa nghệ thuật gốm truyền thống và phong cách hiện đại, sản phẩm này không chỉ là biểu tượng của sự tinh tế mà còn là điểm nhấn độc đáo cho bữa trà thư giãn của bạn.",
+      "price": 650000,
+      "material": "Gốm",
+      "quantity": 14,
+      "type": "Ấm trà"
+   },
+   {
+      "name": "Bộ Ấm Chén Bát Tràng men kem vẽ tay",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/amtramenkem.jpg",
+      "desc": "Mang đậm dấu ấn của nghệ thuật truyền thống, sản phẩm được men kem và vẽ tay tinh xảo, tạo nên điểm nhấn độc đáo và sang trọng cho bàn trà của bạn.",
+      "price": 430000,
+      "material": "Gốm",
+      "quantity": 20,
+      "type": "Ấm trà"
+   },
+   {
+      "name": "Lụa Vạn Phúc",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/luavanphuc.jpg",
+      "desc": "Kỳ công từ đôi bàn tay tài hoa, mỗi sợi lụa là một câu chuyện về nghệ thuật truyền thống Việt Nam. Với sự mềm mại và lấp lánh của nó, Lụa Vạn Phúc mang lại sự sang trọng và lịch lãm cho không gian của bạn, là điểm nhấn tinh tế cho mọi dịp đặc biệt.",
+      "price": 195000,
+      "material": "Lụa",
+      "quantity": 20,
+      "type": "Vải"
+   },
+   {
+      "name": "Vải thổ cẩm",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/vaithocam.webp",
+      "desc": "Sự kết hợp tinh tế giữa truyền thống và hiện đại, tạo nên những mảng màu độc đáo và phóng túng.",
+      "price": 120000,
+      "material": "Thổ cẩm",
+      "quantity": 20,
+      "type": "Vải"
+   },
+   {
+      "name": "Túi Đựng Bút Thổ Cẩm",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/tuidungbuttohcam.webp",
+      "desc": "Sự hoà quyện giữa nghệ thuật truyền thống và tính thực dụng, tạo nên sản phẩm độc đáo và đẳng cấp.",
+      "price": 160000,
+      "material": "Thổ cẩm",
+      "quantity": 20,
+      "type": "Túi"
+   },
+   {
+      "name": "Túi xách thổ cẩm",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/tuixachthocam.webp",
+      "desc": "Sự kết hợp tinh tế giữa truyền thống và sự đẳng cấp, tạo nên phong cách độc đáo và sang trọng.",
+      "price": 110000,
+      "material": "Thổ cẩm",
+      "quantity": 20,
+      "type": "Túi"
+   },
+   {
+      "name": "Tranh Đông Hồ Đàn Lợn Âm Dương Dán Mành",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/tranhDHlon.webp",
+      "desc": "Sự pha trộn tinh tế giữa nét truyền thống của tranh Đông Hồ và sự hiện đại của dán mành, tạo ra tác phẩm nghệ thuật độc đáo với sự linh hoạt và sáng tạo.",
+      "price": 190000,
+      "material": "giấy Dó",
+      "quantity": 20,
+      "type": "Tranh"
+   },
+   {
+      "name": "Tranh giấy đông hồ Hội Đu",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/tranhDHhoidu.jpg",
+      "desc": "Sự kỳ công và sáng tạo trong việc tái hiện nét văn hóa dân gian truyền thống, tạo nên tác phẩm nghệ thuật sôi động và ấn tượng, gợi lên những giá trị văn hóa độc đáo của Việt Nam.",
+      "price": 100000,
+      "material": "giấy Dó",
+      "quantity": 20,
+      "type": "Tranh"
+   },
+   {
+      "name": "Thần tài thổ địa gỗ hương liền khối cao 20 cm",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/thantai.jpg",
+      "desc": "Biểu tượng may mắn và thịnh vượng, tạo điểm nhấn sang trọng và linh thiêng cho không gian của bạn với chất liệu gỗ hương tự nhiên và sự tinh tế trong điêu khắc.",
+      "price": 868000,
+      "material": "Gỗ",
+      "quantity": 20,
+      "type": "Tượng"
+   },
+   {
+      "name": "Bộ bàn ghế hương đá",
+      "urlImg": "D:/BWD/client/client/bwd2024/src/component/assets/img/banghehuongda.jpg",
+      "desc": "Sự hoà quyện giữa vẻ đẹp tự nhiên của đá và sự sang trọng của gỗ hương, tạo nên không gian nghệ thuật độc đáo và ấn tượng, kết hợp giữa tính thẩm mỹ và tính ứng dụng trong trang trí nội thất.",
+      "price": 20000000,
+      "material": "go",
+      "quantity": 20,
+      "type": "banghe"
+   }
+]

@@ -1,0 +1,167 @@
+/* styles.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Phông chữ và canh lề của toàn bộ container */
+.container {
+  background-color: #f8cda8;
+  padding: 0 200px 0 20px;
+  margin: 30px auto;
+  text-align: center;
+
+  /*Khối ảnh giới thiệu */
+  .box-img-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    position: relative;
+
+    /* Phần tử chứa hình ảnh chính và phụ */
+    .main-img-about,
+    .sub-img-about {
+      width: 50%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+    }
+
+    /* Phần tử chứa hình ảnh chính */
+    .main-img-about {
+      img {
+        border-radius: 30px;
+        height: 350px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Phần tử chứa hình ảnh phụ */
+    .sub-img-about {
+      right: 0;
+    }
+
+    /* Hình ảnh đè */
+    .press-img-about {
+      position: absolute;
+      top: 70%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+
+      img {
+        border-radius: 30px;
+        height: 300px;
+        border: 15px solid #f8cda8;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Văn Bản giới thiệu */
+
+// Khối nội dung giới thiệu
+.box-content-about {
+  margin-left: 80px;
+
+  //Title cho phần about
+  .title-animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @keyframes scale {
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    h2 {
+      font-size: 47px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      transform: scale(0.94);
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px);
+        margin: 0 5px;
+        font-family: Montserrat;
+      }
+
+      span:nth-child(1) {
+        animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      span:nth-child(2) {
+        animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      span:nth-child(3) {
+        animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      span:nth-child(4) {
+        animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+
+      span:nth-child(5) {
+        animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+    }
+
+    @keyframes fade-in {
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+  }
+
+  .hr-style {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .about-text {
+    text-align: justify;
+  }
+
+  p {
+    font-size: 19px;
+    font-weight: 320;
+  }
+
+  a {
+    font-weight: 450;
+    background-color: transparent;
+    margin: 10px 10px 0;
+    border: 1px solid rgb(128, 128, 128);
+    height: 2.5rem;
+    width: 10rem;
+  }
+}

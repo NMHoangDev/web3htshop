@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  background-color: #fff;
+  padding-top: 50px;
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .pop-up {
+    position: fixed;
+    z-index: 20;
+    top: 30%;
+    left: 30%;
+    animation: zoomIn 0.5s ease-in-out forwards;
+  }
+}

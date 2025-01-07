@@ -1,0 +1,91 @@
+.wrapper {
+    backdrop-filter: blur(5px);
+    background: rgba(49, 49, 49, .66);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 530px;
+    color: white;
+
+    .title {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .simple-bar-chart {
+        width: 70%;
+        margin: 0 auto;
+
+        --line-count: 10;
+        --line-color: currentcolor;
+        --line-opacity: 0.25;
+        --item-gap: 2%;
+        --item-default-color: #060606;
+
+        height: 10rem;
+        display: grid;
+        grid-auto-flow: column;
+        gap: var(--item-gap);
+        align-items: end;
+        padding-inline: var(--item-gap);
+        --padding-block: 1.5rem;
+        /*space for labels*/
+        padding-block: var(--padding-block);
+        position: relative;
+        isolation: isolate;
+        min-height: 300px;
+        margin-top: 60px;
+
+        .item {
+            height: calc(1% * var(--val));
+            background-color: var(--clr, var(--item-default-color));
+            position: relative;
+
+            animation: item-height 1s ease forwards;
+
+            * {
+                position: absolute;
+                text-align: center
+            }
+
+            .label {
+                inset: 100% 0 auto 0
+            }
+
+            .value {
+                inset: auto 0 100% 0
+            }
+
+        }
+
+
+    }
+
+    @media (max-width:850px) {
+        .simple-bar-chart {
+            width: 90%;
+
+            .item {
+                .label {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    .simple-bar-chart::after {
+        content: "";
+        position: absolute;
+        inset: var(--padding-block) 0;
+        z-index: -1;
+        --line-width: 1px;
+        --line-spacing: calc(100% / var(--line-count));
+        background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+        box-shadow: 0 var(--line-width) 0 var(--line-color);
+        opacity: var(--line-opacity);
+    }
+
+    @keyframes item-height {
+        from {
+            height: 0
+        }
+    }
+}

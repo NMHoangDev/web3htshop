@@ -1,0 +1,205 @@
+.wrapper {
+    backdrop-filter: blur(5px);
+    background: rgba(49, 49, 49, .66);
+    color: #abafc6;
+    border-radius: 5px;
+    padding: 20px 0 30px;
+    max-width: 1250px;
+    height: 530px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    .year-stats {
+        white-space: nowrap;
+        width: 60%;
+        margin: 0 auto;
+        max-height: 200px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        .month-group {
+            cursor: pointer;
+            max-width: 400px;
+            height: 140px;
+            margin: 10px;
+            display: inline-block;
+
+            .bar {
+                background-color: #abafc6;
+                width: 20px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .h-25 {
+                height: 25%;
+            }
+
+            .h-50 {
+                height: 50%;
+            }
+
+            .h-75 {
+                height: 75%;
+            }
+
+            .h-100 {
+                height: 100%;
+            }
+
+        }
+
+        .month-group:hover {
+            .bar {
+                background: #5397d6;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+
+        .selected {
+            .bar {
+                background: #5397d6;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+
+    .year-stats:hover {
+        overflow-x: auto;
+    }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #444e80;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #abafc6;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #5397d6;
+    }
+
+    .wrapper-stats-info {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+
+        .stats-info {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            padding-bottom: 90px;
+
+
+            .graph-container {
+                position: relative;
+                margin-right: 20px;
+
+                .percent {
+                    display: block;
+                    width: 180px;
+                    height: 180px;
+
+                    .circular-chart {
+                        .circle {
+                            stroke: #915db1;
+                            fill: none;
+                            stroke-width: 3;
+                        }
+
+                        .circle:nth-child(2) {
+                            stroke: #e59f3c;
+                        }
+
+                        .circle:nth-child(3) {
+                            stroke: #5397d6;
+                        }
+
+                        .circle:nth-child(4) {
+                            stroke: #4cc790;
+                        }
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 14px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+
+            .info {
+                max-width: 500px;
+
+                p {
+                    font-size: 17px;
+                    margin-bottom: 20px;
+
+                    span {
+
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:490px) {
+        .wrapper-stats-info {
+            .stats-info {
+                .graph-container {
+                    .percent {
+                        width: 130px;
+                        height: 130px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background: #444e80;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #abafc6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5397d6;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 450px;
+            position: relative;
+            border: 1px solid;
+            overflow: hidden;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loop {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            background-repeat: no-repeat !important;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img
+            src="https://scontent.fhan5-1.fna.fbcdn.net/v/t39.30808-6/435090472_398850303038420_2660516045701057672_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEiFisp5JCGUzQjaPuM1JO46MRo5W2gJ-foxGjlbaAn5yirLN0Ibn6nolMgLPiN-etEwfGipL5ZemmedZol0QT0&_nc_ohc=-1TQyVUHijoQ7kNvgG9m63b&_nc_ht=scontent.fhan5-1.fna&oh=00_AfD1B6_RlT8NwwokeR9wouF0z5ul4K5j_Xhof_K7tXNOGg&oe=663BEDDF">
+        <div class="loop"></div>
+    </div>
+</body>
+<script>
+    var scaleNumber = 3;//chỉnh cấp độ zoom
+    var loop = document.querySelector('.loop');
+    var box = document.querySelector('.box');
+
+    var img = box.querySelector('img');
+    const src = img.getAttribute('src');
+
+    loop.style.background = `url(${src})`
+    box.addEventListener('mousemove', function (e) {
+        loop.style.backgroundSize = img.offsetWidth * scaleNumber + 'px ' + img.offsetHeight * scaleNumber + 'px';
+        loop.style.display = 'block';
+        let x = e.clientX - box.offsetLeft;
+        let y = e.clientY - box.offsetTop;
+        loop.style.left = x + 'px';
+        loop.style.top = y + 'px';
+
+        let loopX = x / (img.offsetWidth / 100) + '%';
+        let loopY = y / (img.offsetHeight / 100) + '%';
+        loop.style.backgroundPositionX = loopX;
+        loop.style.backgroundPositionY = loopY;
+    });
+
+    loop.addEventListener('mouseleave', function (e) {
+        loop.style.display = 'none';
+    });
+</script>
+
+</html>

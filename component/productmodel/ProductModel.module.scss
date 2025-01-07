@@ -1,0 +1,162 @@
+.container {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px gainsboro;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+
+    &:hover {
+      color: #ff7050;
+    }
+  }
+}
+
+.nameProduct {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+
+  .product-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  #product_name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.cartUnitDisplay,
+.cartQuantity,
+.cartQuantityUpdate,
+.cartRemoveItemDisplay,
+.cartTotalDisplay {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartUnitDisplay {
+  width: 20%;
+}
+
+.cartQuantity {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  .inputQuantity {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+
+    &:focus {
+      border-color: #ff7050;
+      box-shadow: 0 0 5px rgba(255, 112, 80, 0.5);
+    }
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #ff7050;
+    }
+  }
+}
+
+.cartTotalDisplay {
+  width: 20%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5757;
+  text-align: center;
+}
+
+.cartRemoveItemDisplay {
+  width: 5%;
+  text-align: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.cb {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .nameProduct #product_name {
+    display: none;
+  }
+
+  .cartQuantityUpdate {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .nameProduct {
+    gap: 5px;
+
+    .product-img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .cartQuantity {
+    .inputQuantity {
+      width: 40px;
+      height: 35px;
+    }
+  }
+}

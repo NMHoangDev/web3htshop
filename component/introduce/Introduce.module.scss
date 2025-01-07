@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Over+the+Rainbow&display=swap");
+
+:root {
+  --primary-color: rgb(204, 118, 5);
+  /* Bạn có thể thay đổi màu sắc này */
+  --hover-color: #ffffff;
+  /* Màu khi hover */
+}
+
+.container {
+  //   margin-top: -100px;
+  width: 100%;
+  margin-top: 0;
+  font-family: "Marcellus", serif;
+  padding: 320px 0px 170px 0px;
+  // margin-top: -10px;
+  background-color: rgb(255, 253, 253);
+  height: 1100px;
+
+  .welcome {
+    position: absolute;
+    z-index: 1;
+    font-size: 218px;
+    color: rgb(252, 236, 217);
+    width: 100%;
+    text-align: center;
+    margin-top: -5.5%;
+    font-family: "Over the Rainbow", cursive;
+
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @media (max-width: 790px) {
+    .welcome {
+      font-size: 160px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    .welcome {
+      font-size: 120px;
+      margin-top: 0%;
+    }
+
+    .header {
+      .title-2 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    .welcome {
+      font-size: 100px;
+    }
+
+    .header {
+      .title-2 {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+    color: black;
+    position: relative;
+    z-index: 2;
+
+    .title-1 {
+      color: #eb4458;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      font-size: 18px;
+      z-index: 2;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .title-2 {
+      color: #000;
+      line-height: 48px;
+      margin-bottom: 54px;
+      z-index: 2;
+      position: relative;
+      font-size: 44px;
+      font-weight: lighter;
+    }
+
+    .sub-title {
+      max-width: 770px;
+      margin: 0 auto 51px auto;
+      font-size: 22px;
+      color: #555;
+      position: relative;
+      z-index: 2;
+      line-height: 28px !important;
+      padding: 10px;
+    }
+
+    .readmore {
+      text-align: center;
+      padding-bottom: 40px;
+      position: relative;
+      z-index: 2;
+
+      .animated-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 16px 36px;
+        border: 4px solid;
+        border-color: transparent;
+        font-size: 14px;
+        background-color: inherit;
+        border-radius: 100px;
+        font-weight: 600;
+        color: var(--primary-color);
+        box-shadow: 0 0 0 2px var(--primary-color);
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        margin: 0 auto;
+        width: 220px;
+        height: 50px;
+
+        svg {
+          position: absolute;
+          width: 24px;
+          fill: var(--primary-color);
+          z-index: 9;
+          transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .arr-1 {
+          right: 16px;
+        }
+
+        .arr-2 {
+          left: -25%;
+        }
+
+        .circle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 20px;
+          background-color: var(--primary-color);
+          border-radius: 50%;
+          opacity: 0;
+          transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .text {
+          position: relative;
+          z-index: 1;
+          transform: translateX(20px);
+          transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+      }
+
+      .animated-button:hover {
+        background-color: var(--primary-color);
+        box-shadow: 0 0 0 12px transparent;
+        color: var(--hover-color);
+        border-radius: 12px;
+
+        .arr-1 {
+          right: -25%;
+        }
+
+        .arr-2 {
+          left: 16px;
+        }
+
+        svg {
+          fill: var(--hover-color);
+        }
+      }
+
+      .animated-button:active {
+        scale: 0.95;
+        box-shadow: 0 0 0 4px var(--primary-color);
+
+        .circle {
+          width: 220px;
+          height: 220px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

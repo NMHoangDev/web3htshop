@@ -1,0 +1,55 @@
+body {
+  background-image: url("https://img4.thuthuatphanmem.vn/uploads/2020/07/04/hinh-anh-background-tren-trong-dong_095238554.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.wrapper {
+  width: 100%;
+  margin: 0px;
+  margin-right: 200px;
+
+  height: fit-content;
+}
+.navigation {
+  width: 1640px;
+  font-size: 20px;
+}
+
+.slider {
+  // width: 100%;
+  // padding: 0;
+  // // margin-top: -1000px;
+}
+.introduce {
+  margin: 75px auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  backdrop-filter: blur(5px);
+  background: rgba(49, 49, 49, 0.66);
+}
+
+@media (max-width: 1112px) {
+  .introduce {
+    padding-bottom: 400px;
+  }
+}
+
+@media (max-width: 440px) {
+  .introduce {
+    width: 100%;
+    margin: 75px 0;
+  }
+}
+.highlight {
+  // width: 1700px;
+  // width: 100%;
+}
+.footer {
+  // margin: 0;
+  // width: 1700px;
+}

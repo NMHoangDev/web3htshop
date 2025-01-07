@@ -1,0 +1,186 @@
+.wrapper {
+  width: 100%;
+  height: 700px;
+  // backdrop-filter: blur(5px);
+  // background: rgba(49, 49, 49, .66);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+
+
+  a {
+    text-decoration: none;
+    color: #e1e0e0;
+  }
+
+  .left-side {
+    position: relative;
+    /* Cần thiết để .left-side::before định vị chính xác */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    height: 95%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Để phần tử ::before không tràn ra ngoài */
+
+    .main-text {
+
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to right, #000000d8 0%, #0000006e 80%, #00000000 100%);
+      height: 100%;
+      padding-left: 100px;
+      border-radius: 10px;
+
+      h1 {
+        color: #e1e0e0;
+        font-size: 60px;
+      }
+
+      .gachngang {
+        width: 50%;
+        height: 1px;
+        background-color: #ccc;
+      }
+
+      p {
+        margin-top: 20px;
+        width: 400px;
+        color: #ccc;
+      }
+
+      button {
+        width: 200px;
+        padding: 10px;
+        background-color: transparent;
+        color: #e1e0e0;
+        border: solid 1px #ccc;
+        border-radius: 10px;
+        transition: color 0.5s ease, background-color 0.5s ease;
+      }
+
+      button:hover {
+        color: #2a2a2a;
+        background-color: #e1e0e0;
+      }
+    }
+  }
+
+  .left-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./img/slider1.jpg") center/cover no-repeat;
+    transition: transform 0.3s ease;
+    z-index: -1;
+    /* Đưa phần tử ::before ra phía sau nội dung .left-side */
+  }
+
+  .left-side:hover::before {
+    transform: scale(1.2) rotate(10deg);
+    /* Scale và xoay nền */
+  }
+
+  .right-side {
+    position: relative;
+    /* Cần thiết để .left-side::before định vị chính xác */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    height: 95%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Để phần tử ::before không tràn ra ngoài */
+
+    .main-text {
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to right, #000000d8 0%, #0000006e 80%, #00000000 100%);
+      height: 100%;
+      padding-left: 100px;
+      border-radius: 10px;
+
+      h1 {
+        color: #e1e0e0;
+        font-size: 60px;
+      }
+
+      .gachngang {
+        width: 50%;
+        height: 1px;
+        background-color: #ccc;
+      }
+
+      p {
+        margin-top: 20px;
+        width: 400px;
+        color: #ccc;
+      }
+
+      button {
+        width: 200px;
+        padding: 10px;
+        background-color: transparent;
+        color: #e1e0e0;
+        border: solid 1px #ccc;
+        border-radius: 10px;
+        transition: color 0.5s ease, background-color 0.5s ease;
+      }
+
+      button:hover {
+        color: #2a2a2a;
+        background-color: #e1e0e0;
+      }
+    }
+  }
+
+  .right-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./img/slider2.jpeg") center/cover no-repeat;
+    transition: transform 0.3s ease;
+    z-index: -1;
+    /* Đưa phần tử ::before ra phía sau nội dung .left-side */
+  }
+
+  .right-side:hover::before {
+    transform: scale(1.2) rotate(-10deg);
+    /* Scale và xoay nền */
+  }
+}
+
+@media (max-width: 1111px) {
+  .wrapper {
+    display: block;
+
+    .left-side,
+    .right-side {
+      width: 90%;
+      margin: 30px auto;
+      height: 500px;
+
+      .main-text {
+        padding: 5%;
+
+        h1 {
+          font-size: 45px;
+        }
+
+        p {
+          width: 100%
+        }
+      }
+    }
+  }
+}

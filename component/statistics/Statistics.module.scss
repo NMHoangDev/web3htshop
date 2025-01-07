@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+.view {
+    font-family: "Ubuntu Sans", sans-serif;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    background: rgba(49, 49, 49, .66);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+@media (max-width:800px) {
+    .view {
+        margin-right: 0;
+        margin-left: 0;
+
+        .container {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .container-select-chart {
+            width: 80%;
+
+            .box-none-repon {
+                display: none;
+            }
+        }
+
+        .repon-container {
+            display: block;
+        }
+    }
+}
+
+
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.repon-container {
+    display: none;
+}
+
+.inner-chart {
+    padding: 30px 0 30px;
+}
+
+.w-max {
+    max-width: 100%;
+}
+
+.inner-box .img2 {
+    width: 100%;
+    height: 86px;
+}
+
+.inner-chart figure {
+    margin: 0;
+}
+
+.inner-chart .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.inner-chart .inner-box {
+    background-color: white;
+
+    width: 24%;
+    flex-grow: 1;
+    padding: 20px;
+    border: 1px solid rgb(217, 211, 211);
+    border-radius: 6px;
+}
+
+.inner-chart .inner-box:first-child {
+    padding: 0;
+}
+
+.inner-chart .inner-box div {
+    margin: 6px 10px;
+}
+
+.inner-chart .inner-box .inner-title {
+    font-size: 20px;
+}
+
+.inner-chart .inner-box .inner-desc {
+    font-size: 15px;
+    color: grey;
+}
+
+.inner-chart .inner-box .inner-value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-chart .inner-box .inner-value span {
+    color: grey;
+    font-size: 22px;
+}
+
+.inner-chart .inner-box .inner-icon .i1 {
+    display: inline-block;
+    flex-grow: 1;
+    line-height: 1;
+    padding: 10px 0 13px 0;
+}
+
+.inner-chart .inner-box .inner-icon .i1 {
+    color: #ea5455;
+    background-color: #fce5e6;
+    padding: 12px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.inner-chart .inner-box .inner-icon .i2 {
+    background-color: #d9f8fc !important;
+    color: #00cfe8 !important;
+    padding: 12px 13px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.inner-chart .inner-box .inner-v2 span {
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.box-f {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-box {
+    width: 99%;
+}
+
+.inner-box .sales {
+    padding: 20px 20px 0px 20px
+}
+
+.inner-box .sales2 {
+    padding: 0px 20px 0px 20px
+}
+
+.inner-box .sales3 {
+    padding: 0px 20px 20px 20px
+}
+
+.inner-box .section {
+    padding: 20px 0px 0px 0px;
+}
+
+.inner-box {
+    border: 1px solid rgb(217, 211, 211);
+    border-radius: 6px;
+}
+
+.inner-map {
+    padding-bottom: 40px;
+}
+
+.inner-map .inner-title {
+    font-weight: bolder;
+}
+
+.inner-map .inner-desc {
+    opacity: 0.8;
+    padding: 0 45px;
+}
+
+.inner-chart .inner-box .inner-value .span-red {
+    color: red;
+}
+
+.inner-chart .inner-box .inner-value .span-green {
+    color: rgb(16, 170, 16);
+}
+
+.inner-box .inner-pad {
+    padding: 0;
+}
+
+@media (max-width: 550px) {
+    .inner-chart .wrap {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .inner-chart .inner-box {
+        width: 48%;
+    }
+
+    .inner-box .img2 {
+        width: 100%;
+        height: 238px;
+    }
+
+    .inner-box .img1 {
+        width: 518px;
+    }
+
+    .inner-chart .box-body {
+        height: 300px;
+    }
+
+    .inner-chart .inner-box .inner-title {
+        font-size: 50px;
+    }
+
+    .inner-chart .inner-box .inner-desc {
+        font-size: 30px;
+    }
+
+    .inner-chart .inner-box .inner-value span {
+        font-size: 28px;
+    }
+
+    .inner-chart .inner-box .inner-v2 span {
+        font-size: 24px;
+    }
+
+    .inner-chart .fs {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width:551px) {
+    .inner-chart {
+        display: none;
+    }
+}
